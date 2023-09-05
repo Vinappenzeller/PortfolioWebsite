@@ -1,6 +1,5 @@
 # The Project
-Create a Website which summarizes the most important Information about me.
-Use it to find an internship for my school.
+Create a website that summarizes the most important information about me while also learning new technologies.
 # Technologies used
 - ReactJS
 - Vite
