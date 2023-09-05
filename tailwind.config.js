@@ -8,4 +8,9 @@ export default {
     extend: {},
   },
   plugins: [],
+  variants: {
+    extend: {
+      translate: ['active', 'group-hover'], 
+    },
+  },
 }

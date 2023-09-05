@@ -1,57 +1,102 @@
 import React from 'react';
-import Lucky from '../../public/lucky.png';
-import Punk from '../../public/flättpunk.png';
-import { BsGithub, BsYoutube } from "react-icons/bs";
+import {motion} from "framer-motion";
+import Punk from '../assets/flättpunk.png';
+import { fadeIn } from './variants';
+import Lucky from  '../assets/lucky.png';
+import Zoo from '../assets/Zoo.png'
 
 const Projekte = () => {
   return (
-    <div id='Projekte' className='min-h-screen p-14 flex'>
-      <div className="text-center shadow-xl p-10 h-auto w-full rounded-3xl bg-blue-50">
-      <h1 className='pt-10 pb-14 text-center text-5xl font-bold text-blue-400'>Projekte</h1>
-        <div className='flex-wrap'>
-        <div className='flex gap-2 p-2'>
-          <div id='Projekt1' className='bg-white flex-grow relative h-64'>
-            <img src={Lucky} className="absolute top-0 left-0 w-full h-full object-cover rounded-lg" />
-            <div className="bg-white bg-opacity-50 absolute top-0 left-0 w-full h-full items-center justify-center p-16">
-              <p className="text-2xl font-bold text-black">Lucky Flätte</p>
-              <p className="text-xl text-black">Eine Webseite auf der man nach dem registrieren und einloggen Slots spielen kann</p>
-              <a className='w-auto' href="https://github.com/Kappa-X/LuckyFlaette" target="_blank">
-              <BsGithub className=' text-5xl ml-5'/>
-              </a>
-              <a href="https://www.youtube.com/watch?v=RWmCtzmlfiM" target="_blank">
-              <BsYoutube className=' text-5xl ml-5'/>
+    <div id='Projekte' className=' min-h-screen flex'>
+      <div className=" p-10 h-auto w-full bg-blue-50">
+      <motion.div
+      variants={fadeIn('top', 0.3)}
+      initial='hidden'
+      whileInView={'show'}
+      viewport={{ once: true, amount: 0.3}}
+      ><h1 className='pt-10 pb-14 text-center text-5xl font-bold text-blue-400'>Projects</h1></motion.div>
+       <div className=" container mx-auto">
+        <div className='flex flex-col lg:flex-row gap-x-10'> 
+          <motion.div
+           variants={fadeIn('right', 0.3)}
+           initial='hidden'
+           whileInView={'show'}
+           viewport={{ once: true, amount: 0.3}}
+          className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
+            {}
+            <div>
+              <h2 className=' text-3xl mb-6 tracking-1 uppercase leading-tight text-violet-900'>
+                My Latest  <br />
+              Work.
+              </h2>
+              <p className='max-w-sm mb-16'>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sdfsfsfsdfssfddddddddddddddddd
+              sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+              magna aliquyam erat, sed diam voluptua. 
+              sdfsfsfsdfssfddddddddddddddddds
+              dddddddddddddddddddffffffff
+              dddddddddddddddddddffffffff
+              dddddddddddddddddddd 
+              </p>
+              <a href="https://github.com/Vinappenzeller" target="_blank">
+              <button className="bg-blue-500 hover:bg-blue-600 rounded-full font-medium sm:h-14 sm:px-6 sm:text-sm lg:h-14 lg:px-10 lg:text-base">View all Projects</button>
               </a>
             </div>
-          </div>
-          <div id='Projekt2' className='bg-white flex-grow relative h-64'>
-            <img src={Punk} className="absolute top-0 left-0 w-full h-full object-cover rounded-lg" />
-            <div className="bg-white bg-opacity-50 absolute top-0 left-0 w-full h-full items-center justify-center p-16">
-              <p className="text-2xl font-bold text-black">Flättpunk</p>
-              <p className="text-xl text-black pb-7">Eine Webseite auf welcher man verschiedene Spiele spielen kann</p>
-              <a href="https://github.com/Vinappenzeller/Flaettpunk" target="_blank">
-              <BsGithub className=' text-5xl ml-5'/>
-              </a>
-              <a href="https://www.youtube.com/watch?v=sw3240penwY" target="_blank">
-              <BsYoutube className=' text-5xl ml-5'/>
-              </a>
+            {}
+            <div className='cursor-pointer group relative overflow-hidden border-2 border-black/50 rounded-xl'>
+              {}
+              <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+              {}
+              <img className='group-hover:scale-125 transition-all duration-500' src={Punk} alt="" />
+              {}
+              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
+                <span className=' text-2xl text-white'>A website with all kinds of quizzes created by my classmates and me</span>
+                </div>
+              {}
+              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
+                <span className='text-3xl text-white'>Flättpunk</span>
+              </div>
             </div>
-          </div>
-          </div>
-          <div className='flex gap-2'>
-          <div id='Projekt2' className='bg-white flex-grow relative h-64'>
-            <img src={Punk} className="absolute top-0 left-0 w-full h-full object-cover rounded-lg" />
-            <div className="bg-white bg-opacity-50 absolute top-0 left-0 w-full h-full items-center justify-center p-16">
-              <p className="text-2xl font-bold text-black">Coming soon...</p>
+          </motion.div>
+          <motion.div
+          variants={fadeIn('left', 0.3)}
+          initial='hidden'
+          whileInView={'show'}
+          viewport={{ once: true, amount: 0.3}}
+          className='flex-1 flex flex-col gap-y-10'>
+            {}
+            <div className='cursor-pointer group relative overflow-hidden border-2 border-black/50 rounded-xl'>
+              {}
+              <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+              {}
+              <img className='group-hover:scale-125 transition-all duration-500' src={Lucky} alt="" />
+              {}
+              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
+                <span className=' text-2xl text-white'>A website with an complex login system</span>
+                </div>
+              {}
+              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
+                <span className='text-3xl text-white'>Lucky Flätte</span>
+              </div>
             </div>
-          </div>
-          <div id='Projekt2' className='bg-white flex-grow relative h-64'>
-            <img src={Punk} className="absolute top-0 left-0 w-full h-full object-cover rounded-lg" />
-            <div className="bg-white bg-opacity-50 absolute top-0 left-0 w-full h-full items-center justify-center p-16">
-              <p className="text-2xl font-bold text-black">Coming soon...</p>
+            {}
+            <div className='cursor-pointer group relative overflow-hidden border-2 border-black/50 rounded-xl'>
+              {}
+              <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+              {}
+              <img className='group-hover:scale-125 transition-all duration-500' src={Zoo} alt="" />
+              {}
+              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
+                <span className=' text-2xl text-white'>A Website for zoo's to monitor and manage their animals</span>
+                </div>
+              {}
+              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
+                <span className='text-3xl text-white'>Zooinventory</span>
+              </div>
             </div>
-          </div>
-          </div>
+          </motion.div>
         </div>
+       </div>
       </div>
     </div>
   );

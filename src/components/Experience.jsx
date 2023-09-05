@@ -1,22 +1,22 @@
 import React from "react";
-import image1 from '../../public/javascript.png';
-import image2 from '../../public/Csharpo.png';
-import image3 from '../../public/mysql.png';
-import image4 from '../../public/docker.png';
-import image5 from '../../public/vmware.png';
-import image6 from '../../public/tailwindcss.png';
-import image7 from '../../public/react.png';
-import image8 from '../../public/html.png';
-import image9 from '../../public/css.png';
-import image10 from '../../public/mongodb.png';
-import image11 from '../../public/aws.png';
-import image12 from '../../public/nodejs.png';
+import image1 from '../assets/javascript.png';
+import image2 from '../assets/Csharpo.png';
+import image3 from '../assets/mysql.png';
+import image4 from '../assets/docker.png';
+import image5 from '../assets/vmware.png';
+import image6 from '../assets/tailwindcss.png';
+import image7 from '../assets/react.png';
+import image8 from '../assets/html.png';
+import image9 from '../assets/css.png';
+import image10 from '../assets/mongodb.png';
+import image11 from '../assets/aws.png';
+import image12 from '../assets/nodejs.png';
 
 const Experience = () => {
   return (
-    <div id="Experience" className=" min-h-screen p-14 flex">
-      <div className=" text-center shadow-xl h-auto w-full rounded-3xl bg-blue-50 ">
-        <h1 className='pt-10 pb-28 text-center text-5xl font-bold text-blue-400'>Erfahrung</h1>
+    <div id="Experience" className=" min-h-screen flex">
+      <div className=" text-center h-auto w-full rounded-3xl bg-blue-50 ">
+        <h1 className='pt-10 pb-28 text-center text-5xl font-bold text-blue-400'>About</h1>
         <div className="flex gap-10 pl-44 pr-44 flex-wrap justify-center">
         <div id="JavaScript" className=" bg-white p-5 h-34 w-34 rounded-lg ">
         <img src={image1} className="w-28 h-28" />
