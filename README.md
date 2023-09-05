@@ -1,2 +1,2 @@
 # PortfolioWebsite
-My Personal Portfolio Website very early Version
+This is the code of my personal portfolio
