@@ -37,8 +37,8 @@ function App() {
   }, []);
 
   const notify = () => {
-    toast.info('To switch the Theme Klick on the lightning ⚡', {
-      position: "top-right",
+    toast.info('To switch the Theme Klick the lightning ⚡ on the right', {
+      position: "top-center",
       autoClose: 6000,
       hideProgressBar: false,
       closeOnClick: true,
@@ -51,7 +51,9 @@ function App() {
   };
 
   useEffect(() => {
-    notify(); 
+    const timer = setTimeout(() => {
+      notify(); 
+    }, 2200);  
   }, []);
 
   return (

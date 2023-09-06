@@ -1,71 +1,83 @@
 import React from "react";
-import image1 from '../assets/javascript.png';
-import image2 from '../assets/Csharpo.png';
-import image3 from '../assets/mysql.png';
-import image4 from '../assets/docker.png';
-import image5 from '../assets/vmware.png';
-import image6 from '../assets/tailwindcss.png';
-import image7 from '../assets/react.png';
-import image8 from '../assets/html.png';
-import image9 from '../assets/css.png';
-import image10 from '../assets/mongodb.png';
-import image11 from '../assets/aws.png';
-import image12 from '../assets/nodejs.png';
+import Portrait from "../assets/avatar.gif";
+import { motion } from "framer-motion";
+import { fadeIn } from "./variants";
 
 const About = () => {
   return (
     <div id="About" className=" min-h-screen flex">
       <div className=" text-center h-auto w-full bg-blue-50 ">
-        <h1 className='pt-10 pb-28 text-center text-5xl font-bold text-blue-400'>About</h1>
-        <div className="flex gap-10 pl-44 pr-44 flex-wrap justify-center">
-        <div id="JavaScript" className=" bg-white p-5 h-34 w-34 rounded-lg ">
-        <img src={image1} className="w-28 h-28" />
-        <p className="font-bold">JavaScript</p>
-        </div>
-        <div id="C#" className=" bg-white p-5 h-34 w-34 rounded-lg">
-        <img  src={image2} className="w-28 h-28"/>
-        <p className="font-bold">C#</p>
-        </div>
-        <div id="MySQL" className=" bg-white p-5 h-34 w-34 rounded-lg">
-        <img src={image3} className="w-28 h-28"/>
-        <p className="font-bold">MySQL</p>
-        </div>
-        <div id="Docker" className=" bg-white p-5 h-34 w-34 rounded-lg">
-        <img src={image4} className="w-28 h-28"/>
-        <p className="font-bold">Docker</p>
-        </div>
-        <div id="VMWare" className=" bg-white p-5 h-34 w-34 rounded-lg">
-        <img src={image5} className="w-28 h-28"/>
-        <p className="font-bold">VMWare</p>
-        </div>
-        <div id="TailwindCSS" className=" bg-white p-5 h-34 w-34 rounded-lg">
-        <img src={image6} className="w-28 h-28"/>
-        <p className="font-bold">TailwindCSS</p>
-        </div>
-        <div id="React" className=" bg-white p-5 h-34 w-34 rounded-lg">
-        <img src={image7} className="w-28 h-28"/>
-        <p className="font-bold">React</p>
-        </div>
-        <div id="HTML" className=" bg-white p-5 h-34 w-34 rounded-lg">
-        <img src={image8} className="w-28 h-28"/>
-        <p className="font-bold">HTML</p>
-        </div>
-        <div id="CSS" className=" bg-white p-5 h-34 w-34 rounded-lg">
-        <img src={image9} className="w-28 h-28"/>
-        <p className="font-bold">CSS</p>
-        </div>
-        <div id="MongoDB" className=" bg-white p-5 h-34 w-34 rounded-lg">
-        <img src={image10} className="w-28 h-28"/>
-        <p className="font-bold">MongoDB</p>
-        </div>
-        <div id="AWS" className=" bg-white p-5 h-34 w-34 rounded-lg">
-        <img src={image11} className="w-28 h-28"/>
-        <p className="font-bold">AWS</p>
-        </div>
-        <div id="NodeJS" className=" bg-white p-5 h-34 w-34 rounded-lg">
-        <img src={image12} className="w-28 h-28"/>
-        <p className="font-bold">NodeJS</p>
-        </div>
+        <motion.div
+          variants={fadeIn("", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.4 }}
+        >
+          <h1 className="pt-10 pb-28 text-center text-5xl font-bold text-blue-400">
+            About me
+          </h1>
+        </motion.div>
+        <div className="flex justify-center gap-5 text-left">
+          <div className="  h-auto w-auto p-10">
+            <motion.div
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: true, amount: 0.4 }}>
+            <h1 className=" text-blue-400 text-3xl font-bold pb-4">
+              Vin Appenzeller
+            </h1>
+
+            <p className="text-lg pb-2">
+              I'm a young Developer at the IMS in Aarau. <br /> I enjoy creating
+              different types Applikations that fit your expectaions. <br />
+              Something that i really like about being a software developer is
+              always learning and <br /> adapting new technologies. In the first
+              two years of being a student at IMS I've stubled <br />
+              across alot of different programming languages and technologies
+              and there is more to <br />
+              come in my third year which I'm currently in. For the fourth year
+              of my school i have to <br />
+              get an internship as a applikation developer to complete my
+              education. I am patient and <br />
+              focused at work, able to work alone as well as in a group
+            </p>
+            <h2 className=" text-blue-400 text-lg font-semibold pb-2">
+              Technologies I've worked with:
+            </h2>
+            <div className="flex gap-10 pl-5 font-semibold">
+              <div>
+                <ul className=" list-disc">
+                  <li>JavaScript</li>
+                  <li>C#</li>
+                  <li>SQL</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+              <div>
+                <ul className=" list-disc">
+                  <li>NodeJS</li>
+                  <li>ReactJS</li>
+                  <li>Tailwindcss</li>
+                  <li>NoSQL</li>
+                  <li>Docker</li>
+                </ul>
+              </div>
+            </div>
+          </motion.div>
+          </div>
+          <motion.div
+          variants={fadeIn("left", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.4 }}>
+            <img
+              className="rounded-xl shadow-lg"
+              src={Portrait}
+              alt="Portrait"
+            />
+          </motion.div>
         </div>
       </div>
     </div>
