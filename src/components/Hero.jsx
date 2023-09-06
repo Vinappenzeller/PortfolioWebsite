@@ -13,10 +13,10 @@ const Hero = () => {
         viewport={{ once: true, amount: 0.3 }}
       >
         <motion.div
-        variants={fadeIn("right", 0.7)}
+        variants={fadeIn("right", 0.9)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: true, amount: 0.7 }}
+        viewport={{ once: true, amount: 0.9 }}
         >
         <h1 className="text-5xl py-2 text-blue-400 font-medium md:text-6xl lg:text-7xl">
         Hi, I'm Vin Appenzeller

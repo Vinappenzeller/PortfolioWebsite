@@ -15,7 +15,7 @@ import image12 from '../assets/nodejs.png';
 const Experience = () => {
   return (
     <div id="Experience" className=" min-h-screen flex">
-      <div className=" text-center h-auto w-full rounded-3xl bg-blue-50 ">
+      <div className=" text-center h-auto w-full bg-blue-50 ">
         <h1 className='pt-10 pb-28 text-center text-5xl font-bold text-blue-400'>About</h1>
         <div className="flex gap-10 pl-44 pr-44 flex-wrap justify-center">
         <div id="JavaScript" className=" bg-white p-5 h-34 w-34 rounded-lg ">
