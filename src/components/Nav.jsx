@@ -53,7 +53,7 @@ const Nav = () => {
           </li>
         </ul>
       </nav>
-      <div className=" rounded-xl w-auto h-auto bg-blue-50 hover:text-yellow-300 cursor-pointer text-5xl ml-auto transition-all duration-700 mr-20">
+      <div className=" rounded-xl w-auto h-auto hover:text-yellow-300 cursor-pointer text-5xl ml-auto transition-all duration-700 mr-20">
         <AiTwotoneThunderbolt className="" />
       </div>
     </motion.div>
