@@ -5,41 +5,35 @@ import { fadeIn } from './variants';
 import Lucky from  '../assets/lucky.png';
 import Zoo from '../assets/Zoo.png'
 
-const Projekte = () => {
+const Projects = () => {
   return (
-    <div id='Projekte' className=' min-h-screen flex'>
+    <div id='Projects' className=' min-h-screen flex'>
       <div className=" p-10 h-auto w-full bg-blue-50">
       <motion.div
-      variants={fadeIn('top', 0.3)}
+      variants={fadeIn('top', 0.4)}
       initial='hidden'
       whileInView={'show'}
-      viewport={{ once: true, amount: 0.3}}
+      viewport={{ once: true, amount: 0.4}}
       ><h1 className='pt-10 pb-14 text-center text-5xl font-bold text-blue-400'>Projects</h1></motion.div>
        <div className=" container mx-auto">
         <div className='flex flex-col lg:flex-row gap-x-10'> 
           <motion.div
-           variants={fadeIn('right', 0.3)}
+           variants={fadeIn('right', 0.4)}
            initial='hidden'
            whileInView={'show'}
-           viewport={{ once: true, amount: 0.3}}
+           viewport={{ once: true, amount: 0.4}}
           className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
             {}
             <div>
-              <h2 className=' text-3xl mb-6 tracking-1 uppercase leading-tight text-violet-900'>
+              <h2 className=' text-3xl mb-6 tracking-1 uppercase leading-tight text-blue-400'>
                 My Latest  <br />
               Work.
               </h2>
               <p className='max-w-sm mb-16'>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sdfsfsfsdfssfddddddddddddddddd
-              sed diam nonumy eirmod tempor invidunt ut labore et dolore 
-              magna aliquyam erat, sed diam voluptua. 
-              sdfsfsfsdfssfddddddddddddddddds
-              dddddddddddddddddddffffffff
-              dddddddddddddddddddffffffff
-              dddddddddddddddddddd 
+              This is an overview of some of the projects I worked on or created all by myself. Because I'm a student at the IMS, we are working on new projects every month. And some of the projects I made at home are also featured on GitHub. To get to my GitHub, you can either click on the button below or on the GitHub button in the contacts section. Not all my projects have been uploaded to GitHub!
               </p>
               <a href="https://github.com/Vinappenzeller" target="_blank">
-              <button className="bg-blue-500 hover:bg-blue-600 rounded-full font-medium sm:h-14 sm:px-6 sm:text-sm lg:h-14 lg:px-10 lg:text-base">View all Projects</button>
+              <button className=" shadow-lg bg-blue-400 hover:bg-blue-500 rounded-full font-medium sm:h-14 sm:px-6 sm:text-sm lg:h-14 lg:px-10 lg:text-base transition-all duration-300">View all Projects</button>
               </a>
             </div>
             {}
@@ -59,10 +53,10 @@ const Projekte = () => {
             </div>
           </motion.div>
           <motion.div
-          variants={fadeIn('left', 0.3)}
+          variants={fadeIn('left', 0.4)}
           initial='hidden'
           whileInView={'show'}
-          viewport={{ once: true, amount: 0.3}}
+          viewport={{ once: true, amount: 0.4}}
           className='flex-1 flex flex-col gap-y-10'>
             {}
             <div className='cursor-pointer group relative overflow-hidden border-2 border-black/50 rounded-xl'>
@@ -102,4 +96,4 @@ const Projekte = () => {
   );
 };
 
-export default Projekte;
+export default Projects;

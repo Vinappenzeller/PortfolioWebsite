@@ -17,7 +17,7 @@ const Nav = () => {
         <ul className="flex gap-8">
           <li className="relative group">
             <a
-              href="#Experience"
+              href="#About"
               className="cursor-pointer text-2xl hover:text-blue-400 transition-all duration-500"
             >
               About
@@ -26,16 +26,16 @@ const Nav = () => {
           </li>
           <li className="relative group">
             <a
-              href="#Zeitstrahl"
+              href="#Experience"
               className="cursor-pointer text-2xl hover:text-blue-400 transition-all duration-500"
             >
-              Timeline
+              Experience
             </a>
             <div className="absolute w-full h-1 bg-blue-400 bottom-0 left-0 transform scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100 rounded-lg top-14"></div>
           </li>
           <li className="relative group">
             <a
-              href="#Projekte"
+              href="#Projects"
               className="cursor-pointer text-2xl hover:text-blue-400 transition-all duration-500"
             >
               Projects

@@ -31,10 +31,10 @@ const Hero = () => {
 
         </p>
         <div className="relative">
-          <a href="#Experience">
+          <a href="#About">
             <button className=" animate-bounce bg-blue-400 h-auto w-auto text-gray-800 text-3xl text-center rounded-xl hover:bg-blue-500 hover:text-black transition-all duration-500 shadow-lg">
               <p className="p-4 pl-10 pr-10">
-                More <br />ᐁ
+                more <br />ᐁ
               </p>
             </button>
           </a>

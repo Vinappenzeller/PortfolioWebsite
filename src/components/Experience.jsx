@@ -1,71 +1,67 @@
-import React from "react";
-import image1 from '../assets/javascript.png';
-import image2 from '../assets/Csharpo.png';
-import image3 from '../assets/mysql.png';
-import image4 from '../assets/docker.png';
-import image5 from '../assets/vmware.png';
-import image6 from '../assets/tailwindcss.png';
-import image7 from '../assets/react.png';
-import image8 from '../assets/html.png';
-import image9 from '../assets/css.png';
-import image10 from '../assets/mongodb.png';
-import image11 from '../assets/aws.png';
-import image12 from '../assets/nodejs.png';
+import React from 'react';
+import { motion } from 'framer-motion';
+import { fadeIn } from './variants';
+import { useInView } from 'react-intersection-observer';
+
+const TimelineElement = ({ year, content, id }) => {
+  const [ref, inView] = useInView({
+    triggerOnce: true, // Animation wird nur einmal ausgelöst
+    threshold: 0, // Element wird animiert, wenn es zu mindestens 20% sichtbar ist
+  });
+
+var Class = "";
+const Class1 = "bg-white shadow-md shadow rounded-3xl h-28 w-80 mb-44 p-2";
+const Class2 = "bg-white shadow-md shadow rounded-3xl h-28 w-80 mt-36 p-3";
+const Class3 = "bg-white shadow-md shadow rounded-3xl h-28 w-80 p-3"
+const Class4 = "bg-white shadow-md shadow rounded-3xl h-28 w-80 mt-44 p-3"
+
+if(id == 1){
+  Class = Class1;
+}
+else if(id == 2){
+  Class = Class2;
+}
+else if(id == 3){
+  Class = Class3;
+}
+else if(id ==4 ){
+  Class = Class4;
+}
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 130 }}
+      animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 140 }}
+      transition={{ duration: 1.5 }}
+
+      className={Class}
+    >
+      <h1 className="text-2xl font-bold">{year}</h1>
+      <p className="text-lg font-medium text-gray-800">{content}</p>
+    </motion.div>
+  );
+};
 
 const Experience = () => {
   return (
-    <div id="Experience" className=" min-h-screen flex">
-      <div className=" text-center h-auto w-full bg-blue-50 ">
-        <h1 className='pt-10 pb-28 text-center text-5xl font-bold text-blue-400'>About</h1>
-        <div className="flex gap-10 pl-44 pr-44 flex-wrap justify-center">
-        <div id="JavaScript" className=" bg-white p-5 h-34 w-34 rounded-lg ">
-        <img src={image1} className="w-28 h-28" />
-        <p className="font-bold">JavaScript</p>
-        </div>
-        <div id="C#" className=" bg-white p-5 h-34 w-34 rounded-lg">
-        <img  src={image2} className="w-28 h-28"/>
-        <p className="font-bold">C#</p>
-        </div>
-        <div id="MySQL" className=" bg-white p-5 h-34 w-34 rounded-lg">
-        <img src={image3} className="w-28 h-28"/>
-        <p className="font-bold">MySQL</p>
-        </div>
-        <div id="Docker" className=" bg-white p-5 h-34 w-34 rounded-lg">
-        <img src={image4} className="w-28 h-28"/>
-        <p className="font-bold">Docker</p>
-        </div>
-        <div id="VMWare" className=" bg-white p-5 h-34 w-34 rounded-lg">
-        <img src={image5} className="w-28 h-28"/>
-        <p className="font-bold">VMWare</p>
-        </div>
-        <div id="TailwindCSS" className=" bg-white p-5 h-34 w-34 rounded-lg">
-        <img src={image6} className="w-28 h-28"/>
-        <p className="font-bold">TailwindCSS</p>
-        </div>
-        <div id="React" className=" bg-white p-5 h-34 w-34 rounded-lg">
-        <img src={image7} className="w-28 h-28"/>
-        <p className="font-bold">React</p>
-        </div>
-        <div id="HTML" className=" bg-white p-5 h-34 w-34 rounded-lg">
-        <img src={image8} className="w-28 h-28"/>
-        <p className="font-bold">HTML</p>
-        </div>
-        <div id="CSS" className=" bg-white p-5 h-34 w-34 rounded-lg">
-        <img src={image9} className="w-28 h-28"/>
-        <p className="font-bold">CSS</p>
-        </div>
-        <div id="MongoDB" className=" bg-white p-5 h-34 w-34 rounded-lg">
-        <img src={image10} className="w-28 h-28"/>
-        <p className="font-bold">MongoDB</p>
-        </div>
-        <div id="AWS" className=" bg-white p-5 h-34 w-34 rounded-lg">
-        <img src={image11} className="w-28 h-28"/>
-        <p className="font-bold">AWS</p>
-        </div>
-        <div id="NodeJS" className=" bg-white p-5 h-34 w-34 rounded-lg">
-        <img src={image12} className="w-28 h-28"/>
-        <p className="font-bold">NodeJS</p>
-        </div>
+    <div id='Experience' className='min-h-screen flex'>
+      <div className=" p-10 h-auto w-full bg-blue-50 ">
+        <motion.div
+        variants={fadeIn('top', 0.3)}
+        initial='hidden'
+        whileInView={'show'}
+        viewport={{ once: true, amount: 0.3}}><h1 className="text-center text-5xl font-bold text-blue-400">Experience</h1></motion.div>
+        <div id='Timeline' className='flex flex-row gap-1 pt-5 justify-center'>
+          <div className='flex flex-col mt-16'>
+            <TimelineElement year="2012" content="Primary School, Hermetschwil-Staffeln" id={1} />
+            <TimelineElement year="2018" content="High School, Seengen" id={3} />
+          </div>
+          <div className='bg-black w-2 rounded-lg shadow-md'></div>
+          <div className='flex flex-col mt-16'>
+            <TimelineElement year="2016" content="Primary School, Hallwil" id={2} />
+            <TimelineElement year="2021" content="IMS, Altekanti Aarau and BBBaden" id={4} />
+          </div>
         </div>
       </div>
     </div>
