@@ -1,5 +1,5 @@
 import React from "react";
-import Portrait from "../assets/avatar.gif";
+import Portrait from "../assets/avatar.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "./variants";
 import jsico from "../assets/js.png";
@@ -80,7 +80,7 @@ const About = () => {
           whileInView={"show"}
           viewport={{ once: true, amount: 0.4 }}>
             <img
-              className="rounded-xl shadow-lg"
+              className="rounded-xl shadow-lg h-80 w-auto"
               src={Portrait}
               alt="Portrait"
             />
