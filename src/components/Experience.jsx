@@ -45,7 +45,7 @@ else if(id ==4 ){
 
 const Experience = () => {
   return (
-    <div id='Experience' className='min-h-screen flex'>
+    <div id='Experience' className=' scroll-m-14 min-h-screen flex'>
       <div className=" p-10 h-auto w-full bg-blue-50 ">
         <motion.div
         variants={fadeIn('top', 0.3)}

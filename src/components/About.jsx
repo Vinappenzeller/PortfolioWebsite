@@ -2,10 +2,20 @@ import React from "react";
 import Portrait from "../assets/avatar.gif";
 import { motion } from "framer-motion";
 import { fadeIn } from "./variants";
+import jsico from "../assets/js.png";
+import csharpico from "../assets/csharp.png";
+import sqlico from "../assets/sql.png";
+import htmlico from "../assets/html.png";
+import cssico from "../assets/css.png";
+import nodejsico from "../assets/nodejs.png";
+import reactjsico from "../assets/react.png";
+import tailwindico from "../assets/tailwindcss.png";
+import nosqlico from "../assets/mongo.png";
+import dockerico from "../assets/docker.png";
 
 const About = () => {
   return (
-    <div id="About" className=" min-h-screen flex">
+    <div id="About" className=" scroll-m-14 min-h-screen flex">
       <div className=" text-center h-auto w-full bg-blue-50 ">
         <motion.div
           variants={fadeIn("", 0.4)}
@@ -45,24 +55,20 @@ const About = () => {
             <h2 className=" text-blue-400 text-lg font-semibold pb-2">
               Technologies I've worked with
             </h2>
-            <div className="flex gap-10 pl-5 font-semibold">
-              <div>
-                <ul className=" list-disc">
-                  <li>JavaScript</li>
-                  <li>C#</li>
-                  <li>SQL</li>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                </ul>
+            <div className="flex flex-col gap-14 font-semibold">
+              <div className=" flex">
+                <img className=" select-none w-20 h-20" src={jsico} alt="jsico" />
+                <img className=" select-none  w-20 h-20" src={csharpico} alt="csharpico" />
+                <img className=" select-none  w-20 h-20" src={sqlico} alt="sqlico" />
+                <img className=" select-none  w-20 h-20" src={htmlico} alt="htmlico" />
+                <img className=" select-none  w-20 h-20" src={cssico} alt="cssico" />
               </div>
-              <div>
-                <ul className=" list-disc">
-                  <li>NodeJS</li>
-                  <li>ReactJS</li>
-                  <li>Tailwindcss</li>
-                  <li>NoSQL</li>
-                  <li>Docker</li>
-                </ul>
+              <div className=" flex">
+              <img className=" select-none  w-20 h-20" src={nodejsico} alt="nodejsico" />
+              <img className=" select-none  w-20 h-20" src={reactjsico} alt="reactjsico" />
+              <img className=" select-none  w-20 h-20" src={tailwindico} alt="tailwindico" />
+              <img className=" select-none  w-20 h-20" src={nosqlico} alt="nosqlico" />
+              <img className=" select-none  w-20 h-20" src={dockerico} alt="dockerico" />
               </div>
             </div>
           </motion.div>

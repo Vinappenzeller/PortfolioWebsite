@@ -7,7 +7,7 @@ import Zoo from '../assets/Zoo.png'
 
 const Projects = () => {
   return (
-    <div id='Projects' className=' min-h-screen flex'>
+    <div id='Projects' className='scroll-m-4 min-h-screen flex'>
       <div className=" p-10 h-auto w-full bg-blue-50">
       <motion.div
       variants={fadeIn('top', 0.4)}
