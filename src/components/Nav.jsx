@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { AiTwotoneThunderbolt } from "react-icons/ai";
 import { fadeIn } from "./variants";
 import { motion } from "framer-motion";
 import "../index.css";

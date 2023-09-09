@@ -32,7 +32,7 @@ function App() {
 
   return (
     <>
-    <div className="bg-blue-50 dark:bg-slate-800 transition-colors duration-500 ease-in">
+    <div className="bg-blue-50 dark:bg-slate-800 transition-colors duration-500 ease-in overscroll-x-none">
       <ToastContainer />
           <Nav />
           <Hero />
