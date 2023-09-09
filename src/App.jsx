@@ -11,7 +11,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const notify = () => {
-    toast.info('To switch the theme click the moon 🌙', {
+    toast.info('To switch the theme click on the moon 🌙', {
       position: "top-center",
       autoClose: 6000,
       hideProgressBar: false,
