@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "./variants";
 
@@ -10,13 +10,13 @@ const Hero = () => {
         variants={fadeIn("right", 0.3)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: true, amount: 0 }}
       >
         <motion.div
         variants={fadeIn("right", 0.8)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{ once: true, amount: 0.8 }}
+        viewport={{ once: true, amount: 0 }}
         >
         <h1 className="text-5xl py-2 text-blue-400 font-medium md:text-6xl lg:text-7xl">
         Hi, I'm Vin Appenzeller

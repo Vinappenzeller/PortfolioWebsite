@@ -10,10 +10,10 @@ const TimelineElement = ({ year, content, id }) => {
   });
 
 var Class = "";
-const Class1 = "bg-white shadow-md shadow rounded-3xl h-28 w-80 mb-44 p-2";
-const Class2 = "bg-white shadow-md shadow rounded-3xl h-28 w-80 mt-36 p-3";
-const Class3 = "bg-white shadow-md shadow rounded-3xl h-28 w-80 p-3"
-const Class4 = "bg-white shadow-md shadow rounded-3xl h-28 w-80 mt-44 p-3"
+const Class1 = "bg-white shadow-md shadow rounded-3xl m-4 p-2 h-28 w-80 lg:mb-44 lg:p-2";
+const Class2 = "bg-white shadow-md shadow rounded-3xl m-4 p-2 h-28 w-80 lg:mt-36 lg:p-3";
+const Class3 = "bg-white shadow-md shadow rounded-3xl m-4 p-2 h-28 w-80 lg:p-3"
+const Class4 = "bg-white shadow-md shadow rounded-3xl m-4 p-2 h-28 w-80 lg:mt-44 lg:p-3"
 
 if(id == 1){
   Class = Class1;
@@ -51,14 +51,14 @@ const Experience = () => {
         variants={fadeIn('top', 0.3)}
         initial='hidden'
         whileInView={'show'}
-        viewport={{ once: true, amount: 0.3}}><h1 className="text-center text-5xl font-bold text-blue-400">Experience</h1></motion.div>
-        <div id='Timeline' className='flex flex-row gap-1 pt-5 justify-center'>
-          <div className='flex flex-col mt-16'>
+        viewport={{ once: true, amount: 0}}><h1 className="text-center text-5xl font-bold text-blue-400">Experience</h1></motion.div>
+        <div id='Timeline' className='flex flex-col lg:flex-row lg:gap-1 pt-5 lg:justify-center'>
+          <div className='lg:flex lg:flex-col lg:mt-16 lg:self-auto self-center '>
             <TimelineElement year="2012" content="Primary School, Hermetschwil-Staffeln" id={1} />
             <TimelineElement year="2018" content="High School, Seengen" id={3} />
           </div>
-          <div className='bg-black w-2 rounded-lg shadow-md'></div>
-          <div className='flex flex-col mt-16'>
+          <div className='lg:bg-black lg:w-2 lg:rounded-lg lg:shadow-md'></div>
+          <div className='lg:flex lg:flex-col lg:mt-16 lg:self-auto self-center '>
             <TimelineElement year="2016" content="Primary School, Hallwil" id={2} />
             <TimelineElement year="2021" content="IMS, Altekanti Aarau and BBBaden" id={4} />
           </div>

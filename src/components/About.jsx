@@ -23,12 +23,12 @@ const About = () => {
           whileInView={"show"}
           viewport={{ once: true, amount: 0.4 }}
         >
-          <h1 className="pt-10 pb-28 text-center text-5xl font-bold text-blue-400">
+          <h1 className="pt-10 pb-2 lg:pb-20 text-center text-5xl font-bold text-blue-400">
             About me
           </h1>
         </motion.div>
-        <div className="flex justify-center gap-5 text-left">
-          <div className="  h-auto w-auto p-10">
+        <div className="flex lg:flex-row flex-col justify-center gap-5 text-left">
+          <div className=" lg:text-justify text-center  h-auto w-auto p-10">
             <motion.div
             variants={fadeIn("right", 0.4)}
             initial="hidden"
@@ -38,42 +38,43 @@ const About = () => {
               Vin Appenzeller
             </h1>
 
-            <p className="text-lg pb-2">
-              I'm a young Developer at the IMS in Aarau. <br /> I enjoy creating
-              different types Applikations that fit your expectaions. <br />
+            <p className=" lg:max-w-xl lg:text-lg md:text-md text-sm pb-2">
+              I'm a young Developer at the IMS in Aarau. I enjoy creating
+              different types Applikations that fit your expectaions.
               Something that i really like about being a software developer is
-              always learning and <br /> adapting new technologies. In the first
-              two years of being a student at IMS I've stubled <br />
+              always learning and adapting new technologies. In the first
+              two years of being a student at IMS I've stubled
               across alot of different programming languages and technologies
-              and there is more to <br />
+              and there is more to
               come in my third year which I'm currently in. For the fourth year
-              of my school i have to <br />
+              of my school i have to
               get an internship as a applikation developer to complete my
-              education. I am patient and <br />
+              education. I am patient and
               focused at work, able to work alone as well as in a group
             </p>
             <h2 className=" text-blue-400 text-lg font-semibold pb-2">
               Technologies I've worked with
             </h2>
-            <div className="flex flex-col gap-14 font-semibold">
-              <div className=" flex">
-                <img className=" select-none w-20 h-20" src={jsico} alt="jsico" />
-                <img className=" select-none  w-20 h-20" src={csharpico} alt="csharpico" />
-                <img className=" select-none  w-20 h-20" src={sqlico} alt="sqlico" />
-                <img className=" select-none  w-20 h-20" src={htmlico} alt="htmlico" />
-                <img className=" select-none  w-20 h-20" src={cssico} alt="cssico" />
+            <div className="flex flex-col gap-10 lg:gap-14 font-semibold">
+              <div className=" lg:justify-normal justify-center flex">
+                <img className=" select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={jsico} alt="jsico" />
+                <img className=" select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={csharpico} alt="csharpico" />
+                <img className=" select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={sqlico} alt="sqlico" />
+                <img className=" select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={htmlico} alt="htmlico" />
+                <img className=" select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={cssico} alt="cssico" />
               </div>
-              <div className=" flex">
-              <img className=" select-none  w-20 h-20" src={nodejsico} alt="nodejsico" />
-              <img className=" select-none  w-20 h-20" src={reactjsico} alt="reactjsico" />
-              <img className=" select-none  w-20 h-20" src={tailwindico} alt="tailwindico" />
-              <img className=" select-none  w-20 h-20" src={nosqlico} alt="nosqlico" />
-              <img className=" select-none  w-20 h-20" src={dockerico} alt="dockerico" />
+              <div className=" lg:justify-normal justify-center flex">
+              <img className=" select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={nodejsico} alt="nodejsico" />
+              <img className=" select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={reactjsico} alt="reactjsico" />
+              <img className=" select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={tailwindico} alt="tailwindico" />
+              <img className=" select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={nosqlico} alt="nosqlico" />
+              <img className=" select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={dockerico} alt="dockerico" />
               </div>
             </div>
           </motion.div>
           </div>
           <motion.div
+          className=" lg:pt-16 lg:self-auto self-center"
           variants={fadeIn("left", 0.4)}
           initial="hidden"
           whileInView={"show"}

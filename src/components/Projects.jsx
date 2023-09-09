@@ -13,7 +13,7 @@ const Projects = () => {
       variants={fadeIn('top', 0.4)}
       initial='hidden'
       whileInView={'show'}
-      viewport={{ once: true, amount: 0.4}}
+      viewport={{ once: true, amount: 0}}
       ><h1 className='pt-10 pb-14 text-center text-5xl font-bold text-blue-400'>Projects</h1></motion.div>
        <div className=" container mx-auto">
         <div className='flex flex-col lg:flex-row gap-x-10'> 
@@ -21,7 +21,7 @@ const Projects = () => {
            variants={fadeIn('right', 0.4)}
            initial='hidden'
            whileInView={'show'}
-           viewport={{ once: true, amount: 0.4}}
+           viewport={{ once: true, amount: 0}}
           className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
             {}
             <div>
@@ -39,15 +39,15 @@ const Projects = () => {
             {}
             <div className='cursor-pointer group relative overflow-hidden border-2 border-black/50 rounded-xl'>
               {}
-              <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+              <div className='group-hover:bg-black/70 w-full h-full absolute z-10 transition-all duration-300'></div>
               {}
               <img className='group-hover:scale-125 transition-all duration-500' src={Punk} alt="" />
               {}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
+              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-10'>
                 <span className=' text-2xl text-white'>A website with all kinds of quizzes created by my classmates and me</span>
                 </div>
               {}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
+              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-10'>
                 <span className='text-3xl text-white'>Flättpunk</span>
               </div>
             </div>
@@ -56,35 +56,35 @@ const Projects = () => {
           variants={fadeIn('left', 0.4)}
           initial='hidden'
           whileInView={'show'}
-          viewport={{ once: true, amount: 0.4}}
+          viewport={{ once: true, amount: 0}}
           className='flex-1 flex flex-col gap-y-10'>
             {}
             <div className='cursor-pointer group relative overflow-hidden border-2 border-black/50 rounded-xl'>
               {}
-              <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+              <div className='group-hover:bg-black/70 w-full h-full absolute z-10 transition-all duration-300'></div>
               {}
               <img className='group-hover:scale-125 transition-all duration-500' src={Lucky} alt="" />
               {}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
+              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-10'>
                 <span className=' text-2xl text-white'>A website with an complex login system</span>
                 </div>
               {}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
+              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-10'>
                 <span className='text-3xl text-white'>Lucky Flätte</span>
               </div>
             </div>
             {}
             <div className='cursor-pointer group relative overflow-hidden border-2 border-black/50 rounded-xl'>
               {}
-              <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+              <div className='group-hover:bg-black/70 w-full h-full absolute z-10 transition-all duration-300'></div>
               {}
               <img className='group-hover:scale-125 transition-all duration-500' src={Zoo} alt="" />
               {}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
+              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-10'>
                 <span className=' text-2xl text-white'>A Website for zoo's to monitor and manage their animals</span>
                 </div>
               {}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
+              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-10'>
                 <span className='text-3xl text-white'>Zooinventory</span>
               </div>
             </div>
