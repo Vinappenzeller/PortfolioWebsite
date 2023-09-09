@@ -24,7 +24,7 @@ const Hero = () => {
         <h2 className="text-2xl py-2 md:text-3xl lg:text-4xl">
         a Student at the IMS in Aarau
         </h2>
-        <p className="lg:text-2xl py-5 leading-8 text-gray-800 md:text-xl max-w-4xl mx-auto pb-32">
+        <p className="lg:text-2xl py-5 leading-8 text-gray-800 md:text-xl max-w-4xl mx-auto lg:pb-32 pb-16">
         I am looking for a 1 year internship as an application developer for my
           education at the IMS Aarau for the year 2024.
          This Portfolio summarizes the most important information about me.

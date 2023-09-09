@@ -55,7 +55,7 @@ const About = () => {
             <h2 className=" text-blue-400 text-lg font-semibold pb-2">
               Technologies I've worked with
             </h2>
-            <div className="flex flex-col gap-10 lg:gap-14 font-semibold">
+            <div className="flex flex-col gap-0 font-semibold">
               <div className=" lg:justify-normal justify-center flex">
                 <img className=" select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={jsico} alt="jsico" />
                 <img className=" select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={csharpico} alt="csharpico" />

@@ -33,7 +33,7 @@ const Projects = () => {
               This is an overview of some of the projects I worked on or created all by myself. Because I'm a student at the IMS, we are working on new projects every month. And some of the projects I made at home are also featured on GitHub. To get to my GitHub, you can either click on the button below or on the GitHub button in the contacts section. Not all my projects have been uploaded to GitHub!
               </p>
               <a href="https://github.com/Vinappenzeller" target="_blank">
-              <button className=" shadow-lg bg-blue-400 hover:bg-blue-500 rounded-full font-medium sm:h-14 sm:px-6 sm:text-sm lg:h-14 lg:px-10 lg:text-base transition-all duration-300">View all Projects</button>
+              <button className=" shadow-lg bg-blue-400 hover:bg-blue-500 rounded-full font-medium h-14 px-10 sm:text-sm lg:h-14 lg:px-10 lg:text-base transition-all duration-300">View all Projects</button>
               </a>
             </div>
             {}
@@ -44,11 +44,11 @@ const Projects = () => {
               <img className='group-hover:scale-125 transition-all duration-500' src={Punk} alt="" />
               {}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-10'>
-                <span className=' text-2xl text-white'>A website with all kinds of quizzes created by my classmates and me</span>
+                <span className=' text-md md:text-xl lg:text-2xl text-white'>A website with all kinds of quizzes created by my classmates and me</span>
                 </div>
               {}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-10'>
-                <span className='text-3xl text-white'>Flättpunk</span>
+                <span className=' text-xl md:text-2xl lg:text-3xl text-white'>Flättpunk</span>
               </div>
             </div>
           </motion.div>
@@ -66,11 +66,11 @@ const Projects = () => {
               <img className='group-hover:scale-125 transition-all duration-500' src={Lucky} alt="" />
               {}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-10'>
-                <span className=' text-2xl text-white'>A website with an complex login system</span>
+                <span className='text-md md:text-xl lg:text-2xl text-white'>A website with an complex login system</span>
                 </div>
               {}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-10'>
-                <span className='text-3xl text-white'>Lucky Flätte</span>
+                <span className='text-xl md:text-2xl lg:text-3xl text-white'>Lucky Flätte</span>
               </div>
             </div>
             {}
@@ -81,11 +81,11 @@ const Projects = () => {
               <img className='group-hover:scale-125 transition-all duration-500' src={Zoo} alt="" />
               {}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-10'>
-                <span className=' text-2xl text-white'>A Website for zoo's to monitor and manage their animals</span>
+                <span className='text-md md:text-xl lg:text-2xl text-white'>A Website for zoo's to monitor and manage their animals</span>
                 </div>
               {}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-10'>
-                <span className='text-3xl text-white'>Zooinventory</span>
+                <span className='text-xl md:text-2xl lg:text-3xl text-white'>Zooinventory</span>
               </div>
             </div>
           </motion.div>
