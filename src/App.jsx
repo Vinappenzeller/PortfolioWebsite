@@ -8,9 +8,10 @@ import Hero from './components/Hero';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
 function App() {
   const notify = () => {
-    toast.info('To switch the Theme Klick the lightning ⚡', {
+    toast.info('To switch the theme click the moon 🌙', {
       position: "top-center",
       autoClose: 6000,
       hideProgressBar: false,
@@ -18,7 +19,7 @@ function App() {
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
-      theme: "light",
+      theme: "dark",
       toastId: 'unique_notification_id'
       });
   };
@@ -31,8 +32,8 @@ function App() {
 
   return (
     <>
+    <div className="bg-blue-50 dark:bg-slate-800 transition-colors duration-500 ease-in">
       <ToastContainer />
-      <div className="bg-blue-50">
           <Nav />
           <Hero />
         <About />

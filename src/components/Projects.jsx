@@ -8,7 +8,7 @@ import Zoo from '../assets/Zoo.png'
 const Projects = () => {
   return (
     <div id='Projects' className='scroll-m-4 min-h-screen flex'>
-      <div className=" p-10 h-auto w-full bg-blue-50">
+      <div className=" p-10 h-auto w-full bg-blue-50 dark:bg-slate-800 transition-colors duration-500 ease-in">
       <motion.div
       variants={fadeIn('top', 0.4)}
       initial='hidden'
@@ -25,15 +25,15 @@ const Projects = () => {
           className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'>
             {}
             <div>
-              <h2 className=' text-3xl mb-6 tracking-1 uppercase leading-tight text-blue-400'>
+              <h2 className=' text-3xl mb-6 tracking-1 uppercase leading-tight text-blue-400 dark:text-zinc-200 transition-colors duration-500 ease-in'>
                 My Latest  <br />
               Work.
               </h2>
-              <p className='max-w-sm mb-16'>
+              <p className='max-w-sm mb-16 dark:text-zinc-400 transition-colors duration-500 ease-in'>
               This is an overview of some of the projects I worked on or created all by myself. Because I'm a student at the IMS, we are working on new projects every month. And some of the projects I made at home are also featured on GitHub. To get to my GitHub, you can either click on the button below or on the GitHub button in the contacts section. Not all my projects have been uploaded to GitHub!
               </p>
               <a href="https://github.com/Vinappenzeller" target="_blank">
-              <button className=" shadow-lg bg-blue-400 hover:bg-blue-500 rounded-full font-medium h-14 px-10 sm:text-sm lg:h-14 lg:px-10 lg:text-base transition-all duration-300">View all Projects</button>
+              <button className="md:hover:scale-110 lg:hover:scale-110 shadow-lg bg-blue-400 hover:bg-blue-500 hover:dark:bg-slate-900 dark:bg-slate-900 dark:bg-opacity-70 dark:text-zinc-200 rounded-full font-medium h-14 px-10 sm:text-sm lg:h-14 lg:px-10 lg:text-base transition-all duration-500 ease-in ">View Projects</button>
               </a>
             </div>
             {}

@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div id="Hero" className=" min-h-screen flex">
       <motion.div
-        className="text-center p-10 h-auto w-full bg-blue-50"
+        className="text-center p-10 h-auto w-full bg-blue-50 dark:bg-slate-800 transition-colors duration-500 ease-in"
         variants={fadeIn("right", 0.3)}
         initial="hidden"
         whileInView={"show"}
@@ -18,13 +18,13 @@ const Hero = () => {
         whileInView={"show"}
         viewport={{ once: true, amount: 0 }}
         >
-        <h1 className="text-5xl py-2 text-blue-400 font-medium md:text-6xl lg:text-7xl">
+        <h1 className="text-5xl py-2 text-blue-400 font-medium md:text-6xl lg:text-7xl ">
         Hi, I'm Vin Appenzeller
         </h1>
-        <h2 className="text-2xl py-2 md:text-3xl lg:text-4xl">
+        <h2 className="text-2xl dark:text-zinc-200 transition-colors duratino-500 ease-in py-2 md:text-3xl lg:text-4xl">
         a Student at the IMS in Aarau
         </h2>
-        <p className="lg:text-2xl py-5 leading-8 text-gray-800 md:text-xl max-w-4xl mx-auto lg:pb-32 pb-16">
+        <p className="lg:text-2xl py-5 leading-8 text-gray-800 dark:text-zinc-400 md:text-xl max-w-4xl mx-auto lg:pb-32 pb-16 transition-colors duration-500 ease-in">
         I am looking for a 1 year internship as an application developer for my
           education at the IMS Aarau for the year 2024.
          This Portfolio summarizes the most important information about me.

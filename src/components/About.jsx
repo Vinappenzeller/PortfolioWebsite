@@ -16,7 +16,7 @@ import dockerico from "../assets/docker.png";
 const About = () => {
   return (
     <div id="About" className=" scroll-m-14 min-h-screen flex">
-      <div className=" text-center h-auto w-full bg-blue-50 ">
+      <div className=" text-center h-auto w-full bg-blue-50 dark:bg-slate-800 transition-colors duration-500 ease-in ">
         <motion.div
           variants={fadeIn("", 0.4)}
           initial="hidden"
@@ -34,11 +34,11 @@ const About = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: true, amount: 0.4 }}>
-            <h1 className=" text-blue-400 text-3xl font-bold pb-4">
+            <h1 className=" text-blue-400 dark:text-zinc-200 transition-colors duration-500 ease-in text-3xl font-bold pb-4">
               Vin Appenzeller
             </h1>
 
-            <p className=" lg:max-w-xl lg:text-lg md:text-md text-sm pb-2">
+            <p className=" lg:max-w-xl lg:text-lg md:text-lg text-sm pb-2 dark:text-zinc-400 transition-colors duration-500 ease-in">
               I'm a young Developer at the IMS in Aarau. I enjoy creating
               different types Applikations that fit your expectaions.
               Something that i really like about being a software developer is
@@ -52,23 +52,23 @@ const About = () => {
               education. I am patient and
               focused at work, able to work alone as well as in a group
             </p>
-            <h2 className=" text-blue-400 text-lg font-semibold pb-2">
+            <h2 className=" text-blue-400 dark:text-zinc-200 transition-colors duration-500 ease-in text-lg font-semibold pb-2">
               Technologies I've worked with
             </h2>
             <div className="flex flex-col gap-0 font-semibold">
               <div className=" lg:justify-normal justify-center flex">
-                <img className=" select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={jsico} alt="jsico" />
-                <img className=" select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={csharpico} alt="csharpico" />
-                <img className=" select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={sqlico} alt="sqlico" />
-                <img className=" select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={htmlico} alt="htmlico" />
-                <img className=" select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={cssico} alt="cssico" />
+                <img className=" animate-pulse select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={jsico} alt="jsico" />
+                <img className=" animate-pulse select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={csharpico} alt="csharpico" />
+                <img className=" animate-pulse select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={sqlico} alt="sqlico" />
+                <img className=" animate-pulse select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={htmlico} alt="htmlico" />
+                <img className=" animate-pulse select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={cssico} alt="cssico" />
               </div>
               <div className=" lg:justify-normal justify-center flex">
-              <img className=" select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={nodejsico} alt="nodejsico" />
-              <img className=" select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={reactjsico} alt="reactjsico" />
-              <img className=" select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={tailwindico} alt="tailwindico" />
-              <img className=" select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={nosqlico} alt="nosqlico" />
-              <img className=" select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={dockerico} alt="dockerico" />
+              <img className=" animate-pulse select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={nodejsico} alt="nodejsico" />
+              <img className=" animate-pulse select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={reactjsico} alt="reactjsico" />
+              <img className=" animate-pulse select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={tailwindico} alt="tailwindico" />
+              <img className=" animate-pulse select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={nosqlico} alt="nosqlico" />
+              <img className=" animate-pulse select-none w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" src={dockerico} alt="dockerico" />
               </div>
             </div>
           </motion.div>

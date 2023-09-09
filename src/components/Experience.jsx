@@ -10,10 +10,10 @@ const TimelineElement = ({ year, content, id }) => {
   });
 
 var Class = "";
-const Class1 = "bg-white shadow-md shadow rounded-3xl m-4 p-2 h-28 w-80 lg:mb-44 lg:p-2";
-const Class2 = "bg-white shadow-md shadow rounded-3xl m-4 p-2 h-28 w-80 lg:mt-36 lg:p-3";
-const Class3 = "bg-white shadow-md shadow rounded-3xl m-4 p-2 h-28 w-80 lg:p-3"
-const Class4 = "bg-white shadow-md shadow rounded-3xl m-4 p-2 h-28 w-80 lg:mt-44 lg:p-3"
+const Class1 = "bg-white dark:bg-slate-900 lg:dark:bg-opacity-90 shadow-md shadow rounded-3xl m-4 p-2 h-28 w-80 lg:mb-44 lg:p-2 transition-colors duration-500 ease-in";
+const Class2 = "bg-white dark:bg-slate-900 lg:dark:bg-opacity-90 shadow-md shadow rounded-3xl m-4 p-2 h-28 w-80 lg:mt-36 lg:p-3 transition-colors duration-500 ease-in";
+const Class3 = "bg-white dark:bg-slate-900 lg:dark:bg-opacity-90 shadow-md shadow rounded-3xl m-4 p-2 h-28 w-80 lg:p-3 transition-colors duration-500 ease-in"
+const Class4 = "bg-white dark:bg-slate-900 lg:dark:bg-opacity-90 shadow-md shadow rounded-3xl m-4 p-2 h-28 w-80 lg:mt-44 lg:p-3 transition-colors duration-500 ease-in"
 
 if(id == 1){
   Class = Class1;
@@ -37,8 +37,8 @@ else if(id ==4 ){
 
       className={Class}
     >
-      <h1 className="text-2xl font-bold">{year}</h1>
-      <p className="text-lg font-medium text-gray-800">{content}</p>
+      <h1 className="text-2xl font-bold dark:text-zinc-200 transition-colors duration-500 ease-in">{year}</h1>
+      <p className="text-lg font-medium text-gray-800 dark:text-zinc-400 transition-colors duration-500 ease-in">{content}</p>
     </motion.div>
   );
 };
@@ -46,7 +46,7 @@ else if(id ==4 ){
 const Experience = () => {
   return (
     <div id='Experience' className=' scroll-m-14 min-h-screen flex'>
-      <div className=" p-10 h-auto w-full bg-blue-50 ">
+      <div className=" p-10 h-auto w-full bg-blue-50 dark:bg-slate-800 transition-colors duration-500 ease-in ">
         <motion.div
         variants={fadeIn('top', 0.3)}
         initial='hidden'
@@ -57,7 +57,7 @@ const Experience = () => {
             <TimelineElement year="2012" content="Primary School, Hermetschwil-Staffeln" id={1} />
             <TimelineElement year="2018" content="High School, Seengen" id={3} />
           </div>
-          <div className='lg:bg-black lg:w-2 lg:rounded-lg lg:shadow-md'></div>
+          <div className='lg:bg-black dark:lg:bg-blue-400 lg:w-2 lg:rounded-lg lg:shadow-md transition-colors duration-500 ease-in'></div>
           <div className='lg:flex lg:flex-col lg:mt-16 lg:self-auto self-center '>
             <TimelineElement year="2016" content="Primary School, Hallwil" id={2} />
             <TimelineElement year="2021" content="IMS, Altekanti Aarau and BBBaden" id={4} />
