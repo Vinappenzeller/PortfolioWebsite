@@ -53,7 +53,7 @@ const Nav = () => {
       <nav className="text-xl">
         <div
           onClick={Gettheme}
-          className="lg:p-0 p-4 rounded-xl lg:w-auto lg:h-auto cursor-pointer text-5xl transition-all duration-1000 absolute lg:top-4 top-1 right-16 text-black"
+          className="lg:p-0 p-4 rounded-xl lg:w-auto lg:h-auto cursor-pointer text-5xl transition-all duration-1000 absolute lg:top-4 top-0 right-16 text-black"
         >
           <ion-icon
             style={color ? { color: "black" } : { color: "white" }}
