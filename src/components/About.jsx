@@ -39,18 +39,18 @@ const About = () => {
             </h1>
 
             <p className=" lg:max-w-xl lg:text-lg md:text-lg text-sm pb-2 dark:text-zinc-400 transition-colors duration-500 ease-in">
-              I'm a young Developer at the IMS in Aarau. I enjoy creating
-              different types Applikations that fit your expectaions.
+              I'm a young developer at the IMS in Aarau. I enjoy creating
+              different types applications that fit your expectaions.
               Something that i really like about being a software developer is
               always learning and adapting new technologies. In the first
-              two years of being a student at IMS I've stubled
+              two years of being a student at IMS I've stumbled
               across alot of different programming languages and technologies
               and there is more to
               come in my third year which I'm currently in. For the fourth year
               of my school i have to
               get an internship as a applikation developer to complete my
               education. I am patient and
-              focused at work, able to work alone as well as in a group
+              focused at work, able to work alone as well as in a group.
             </p>
             <h2 className=" text-blue-400 dark:text-zinc-200 transition-colors duration-500 ease-in text-lg font-semibold pb-2">
               Technologies I've worked with

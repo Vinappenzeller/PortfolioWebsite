@@ -30,7 +30,7 @@ const Projects = () => {
               Work.
               </h2>
               <p className='max-w-sm mb-16 dark:text-zinc-400 transition-colors duration-500 ease-in'>
-              This is an overview of some of the projects I worked on or created all by myself. Because I'm a student at the IMS, we are working on new projects every month. And some of the projects I made at home are also featured on GitHub. To get to my GitHub, you can either click on the button below or on the GitHub button in the contacts section. Not all my projects have been uploaded to GitHub!
+              This is an overview of some of the projects I worked on or created all by myself. Because I'm a student at the IMS, we are working on new projects every month. And some of the projects I made at home are also featured on GitHub. To get to my GitHub, you can either click on the button below or on the GitHub button in the contact section. Not all my projects have been uploaded to GitHub!
               </p>
               <a href="https://github.com/Vinappenzeller" target="_blank">
               <button className="md:hover:scale-110 lg:hover:scale-110 shadow-lg bg-blue-400 hover:bg-blue-500 hover:dark:bg-slate-900 dark:bg-slate-900 dark:bg-opacity-70 dark:text-zinc-200 rounded-full font-medium h-14 px-10 sm:text-sm lg:h-14 lg:px-10 lg:text-base transition-all duration-500 ease-in ">View Projects</button>
@@ -43,11 +43,11 @@ const Projects = () => {
               {}
               <img className='group-hover:scale-125 transition-all duration-500' src={Punk} alt="" />
               {}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-10'>
+              <div className='absolute -bottom-full lg:left-12 left-5 group-hover:bottom-24 transition-all duration-500 z-10'>
                 <span className=' text-md md:text-xl lg:text-2xl text-white'>A website with all kinds of quizzes created by my classmates and me</span>
                 </div>
               {}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-10'>
+              <div className='absolute -bottom-full lg:left-12 left-5 group-hover:bottom-14 transition-all duration-700 z-10'>
                 <span className=' text-xl md:text-2xl lg:text-3xl text-white'>Flättpunk</span>
               </div>
             </div>
@@ -65,11 +65,11 @@ const Projects = () => {
               {}
               <img className='group-hover:scale-125 transition-all duration-500' src={Lucky} alt="" />
               {}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-10'>
+              <div className='absolute -bottom-full lg:left-12 left-5 group-hover:bottom-24 transition-all duration-500 z-10'>
                 <span className='text-md md:text-xl lg:text-2xl text-white'>A website with an complex login system</span>
                 </div>
               {}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-10'>
+              <div className='absolute -bottom-full lg:left-12 left-5 group-hover:bottom-14 transition-all duration-700 z-10'>
                 <span className='text-xl md:text-2xl lg:text-3xl text-white'>Lucky Flätte</span>
               </div>
             </div>
@@ -80,11 +80,11 @@ const Projects = () => {
               {}
               <img className='group-hover:scale-125 transition-all duration-500' src={Zoo} alt="" />
               {}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-10'>
+              <div className='absolute -bottom-full lg:left-12 left-5 group-hover:bottom-24 transition-all duration-500 z-10'>
                 <span className='text-md md:text-xl lg:text-2xl text-white'>A Website for zoo's to monitor and manage their animals</span>
                 </div>
               {}
-              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-10'>
+              <div className='absolute -bottom-full lg:left-12 left-5 group-hover:bottom-14 transition-all duration-700 z-10'>
                 <span className='text-xl md:text-2xl lg:text-3xl text-white'>Zooinventory</span>
               </div>
             </div>

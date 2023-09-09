@@ -40,7 +40,7 @@ const Nav = () => {
   return (
     <motion.div
       id="nav"
-      className="p-5 lg:flex items-center sticky top-0 lg:bg-blue-200  bg-blue-100 lg:bg-opacity-40 z-20 dark:bg-slate-900 lg:dark:bg-opacity-90 transition-colors duration-500 ease-in"
+      className="p-5 lg:flex items-center sticky top-0 lg:bg-blue-200  bg-blue-100 lg:bg-opacity-40 z-20 dark:bg-slate-900 lg:dark:bg-opacity-90 transition-colors duration-500 ease-in "
       variants={fadeIn("right", 0.8)}
       initial="hidden"
       whileInView={"show"}
