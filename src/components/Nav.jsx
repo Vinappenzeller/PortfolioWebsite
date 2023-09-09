@@ -2,11 +2,13 @@ import React from "react";
 import { AiTwotoneThunderbolt } from "react-icons/ai";
 import { fadeIn } from "./variants";
 import { motion } from "framer-motion";
+import "../index.css";
 
 const Nav = () => {
   return (
     <motion.div
-      className="p-5 flex items-center "
+      id="nav"
+      className="p-5 flex items-center sticky top-0  bg-blue-200 bg-opacity-40 z-10"
       variants={fadeIn("right", 0.9)}
       initial="hidden"
       whileInView={"show"}

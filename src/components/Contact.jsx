@@ -25,6 +25,8 @@ const Contact = () => {
         <div className="flex flex-col items-center">
           <MdMail className="mb-1 lg:text-8xl cursor-pointer md:text-7xl sm:text-6xl text-5xl hover:text-blue-400 transition-all duration-500" />
         </div>
+        <p>icons by</p>
+      <a className=" underline cursor-pointer hover:font-semibold" href="https://icons8.com/" target="_blank">icons8</a>
       </div>
     </div>
   );

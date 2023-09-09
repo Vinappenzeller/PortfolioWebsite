@@ -60,10 +60,8 @@ function App() {
     <>
       <ToastContainer />
       <div className="bg-white">
-        <div className="min-h-screen">
           <Nav />
           <Hero />
-        </div>
         <About />
         <Experience />
         <Projects />

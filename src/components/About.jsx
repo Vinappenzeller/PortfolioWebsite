@@ -43,7 +43,7 @@ const About = () => {
               focused at work, able to work alone as well as in a group
             </p>
             <h2 className=" text-blue-400 text-lg font-semibold pb-2">
-              Technologies I've worked with:
+              Technologies I've worked with
             </h2>
             <div className="flex gap-10 pl-5 font-semibold">
               <div>
