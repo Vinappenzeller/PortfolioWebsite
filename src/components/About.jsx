@@ -48,7 +48,7 @@ const About = () => {
               and there is more to
               come in my third year which I'm currently in. For the fourth year
               of my school i have to
-              get an internship as a applikation developer to complete my
+              get an internship as a application developer to complete my
               education. I am patient and
               focused at work, able to work alone as well as in a group.
             </p>
