@@ -1,5 +1,5 @@
 import React from "react";
-import Portrait from "../assets/avatar.png";
+import Portrait from "../assets/Portrait.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "./variants";
 import jsico from "../assets/js.png";
